@@ -65,7 +65,7 @@ Grantees: {", ".join (str(grantee) for grantee in grantees)}\n
         # math.radians(deg + min / 60 + sec / 3600) = (deg + min / 60 + sec / 3600) * pi / 180
         bearing_radians = math.radians(int(current_course[1]) + (int(current_course[2]) / 60) + (int(current_course[3]) / 3600))
             
-        # Calculate northing (y) of end point
+        # Calculate northing of end point
         # Northeast or northwest (positive delta_y): y = y_0 + d cos (bearing)
         # Southeast or southwest (negative delta_y): y = y_0 - d cos (bearing)
         if current_course[0] == '1' or current_course[0] == '4':    # If NE or NW
@@ -75,7 +75,7 @@ Grantees: {", ".join (str(grantee) for grantee in grantees)}\n
         else:
             print("Cannot calculate northing")
 
-        # Calculate easting (x) of end point
+        # Calculate easting of end point
         # Northeast or southeast (positive delta_x): x = x_0 + d sin (bearing)
         # Southwest or southwest (negative delta_x): x = x_0 - d sin (bearing)
         if current_course[0] == '1' or current_course[0] == '2':
