@@ -49,10 +49,10 @@ def point_calculator(point: QgsPointXY):
     grantees = ["Richard D. Busch", "Gail W. Craven"]
 
     print(f"""Beginning and Ending Points for the Courses and Distances Described in
-    Chester County, Pennsylvania\tDeed Book 4405\tPage 735\n
-    Grantors: {", ".join (str(grantor) for grantor in grantors)}
-    Grantees: {", ".join (str(grantee) for grantee in grantees)}\n
-    \t       Northing Easting\t\tNorthing Easting""")
+Chester County, Pennsylvania\tDeed Book 4405\tPage 735\n
+Grantors: {", ".join (str(grantor) for grantor in grantors)}
+Grantees: {", ".join (str(grantee) for grantee in grantees)}\n
+\t       Northing Easting\t\tNorthing Easting""")
 
     # Read course schedule and calculate line-by-line
     for number_of_courses, line in enumerate(course_schedule):
