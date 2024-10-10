@@ -1,6 +1,5 @@
 # git-it-surveyed
-A collection of Python scripts for boundary surveying applications.
-
+A collection of Python scripts for QGIS focusing on integration into existing boundary surveying workflows.
 * point-calculator.py:
   This script calculates coordinates of property corners from a deed.
   Bearings and distances are read from a plaintext .csv in the format quadrant, degrees, minutes, seconds, distance.
